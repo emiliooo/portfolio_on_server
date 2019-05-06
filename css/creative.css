@@ -427,3 +427,6 @@ body {
 .header-content {
   z-index: 4;
 }
+video.bkg {
+  background: black;
+}
