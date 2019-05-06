@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Creative v3.3.7+1 (http://startbootstrap.com/template-overviews/creative)
- * Copyright 2013-2016 Start Bootstrap
+ * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 html,
@@ -147,16 +147,6 @@ aside {
   }
 }
 header {
-  position: relative;
-  width: 100%;
-  min-height: auto;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  background-position: center;
-  background-image: url('../img/header.jpg');
-  text-align: center;
   color: white;
 }
 header .header-content {
@@ -411,9 +401,29 @@ img::-moz-selection {
   color: white;
   background: transparent;
 }
-.show img {
-  width: 85%;
-}
 body {
   webkit-tap-highlight-color: #222222;
+}
+.show img {
+  width: 85%;
+  margin: 20px auto;
+}
+.show img:hover {
+  z-index: 99;
+  transition: .5s all;
+  -webkit-transition: .5s all;
+  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -o-transform: scale(1.3);
+  opacity: 0.8;
+}
+.find_more {
+  cursor: pointer;
+}
+.homepage-hero-module {
+  z-index: 2;
+}
+.header-content {
+  z-index: 4;
 }
