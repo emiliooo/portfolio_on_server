@@ -180,13 +180,13 @@ aside {
 // Homepage Header
 
 header {
-    // position: relative;
-    // width: 100%;
-    // min-height: auto;
-    // .background-cover;
-    // background-position: center;
-    // //background-image: url('../img/header.jpg');
-    // text-align: center;
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    .background-cover;
+    background-position: center;
+    background-image: url('../img/header.jpg');
+    text-align: center;
     color: white;
 
     .header-content {
@@ -217,16 +217,17 @@ header {
         }
     }
 
-    // @media (max-width: 568px) {
-    //     .homepage-hero-module{
-    //         display: none;
-    //     }
-        
-    // }
+
 
     @media (min-width: 768px) {
         min-height: 100%;
-       
+
+        background-image:none;
+
+        .homepage-hero-module{
+            display: block;
+        }
+
         .header-content {
             position: absolute;
             top: 50%;
@@ -253,6 +254,18 @@ header {
             }
         }
     }
+    // @media (max-width: 768px) {
+    //     //color:red;
+    //     header{
+    //                 display: block;
+    //             }
+
+    //     .homepage-hero-module{
+    //         display: none;
+    //     }
+       
+  
+    // }
 }
 
 // Sections
@@ -433,6 +446,7 @@ body {
 }
 .homepage-hero-module{
     z-index: 2;
+    display:none;
 }
 .header-content{
     z-index: 4;
