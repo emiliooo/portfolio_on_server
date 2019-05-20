@@ -39,9 +39,8 @@ h6 {
 }
 p {
   font-size: 16px;
-  line-height: 1.7;
+  line-height: 1.5;
   margin-bottom: 20px;
-  width: 100%;
 }
 .bg-primary {
   background-color: #F05F40;
@@ -49,6 +48,9 @@ p {
 .bg-dark {
   background-color: #222222;
   color: white;
+}
+.text-faded {
+  color: rgba(255, 255, 255, 0.7);
 }
 section {
   padding: 100px 0;
@@ -145,16 +147,6 @@ aside {
   }
 }
 header {
-  position: relative;
-  width: 100%;
-  min-height: auto;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  background-position: center;
-  background-image: url('../img/header.jpg');
-  text-align: center;
   color: white;
 }
 header .header-content {
@@ -182,10 +174,6 @@ header .header-content .header-content-inner p {
 @media (min-width: 768px) {
   header {
     min-height: 100%;
-    background-image: none;
-  }
-  header .homepage-hero-module {
-    display: block;
   }
   header .header-content {
     position: absolute;
@@ -435,7 +423,6 @@ body {
 }
 .homepage-hero-module {
   z-index: 2;
-  display: none;
 }
 .header-content {
   z-index: 4;
