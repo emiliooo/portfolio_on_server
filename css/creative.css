@@ -419,14 +419,11 @@ body {
   box-shadow: 2px 1px 18px 2px;
 }
 .show img:hover {
-  z-index: 99;
-  transition: .5s all;
-  -webkit-transition: .5s all;
-  transform: scale(1.3);
-  -webkit-transform: scale(1.3);
-  -moz-transform: scale(1.3);
-  -o-transform: scale(1.3);
-  opacity: 0.8;
+  text-align: justify;
+  color: #000000;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Times New Roman", Times, serif;
 }
 .find_more {
   cursor: pointer;
@@ -440,4 +437,19 @@ body {
 }
 video.bkg {
   background: black;
+}
+.text {
+  width: 271px;
+  background: #F05F40;
+  position: absolute;
+  top: 81px;
+  text-align: center;
+  margin: 0 auto;
+  border: 2px solid;
+  font-size: 20px;
+  color: white;
+}
+.show a {
+  display: flex;
+  justify-content: center;
 }
