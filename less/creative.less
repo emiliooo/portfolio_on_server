@@ -130,7 +130,7 @@ aside {
         }
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: @table-resolution) {
         background-color: transparent;
         border-color: fade(white, 30%);
 
@@ -220,7 +220,7 @@ header {
 
 
 
-    @media (min-width: 768px) {
+    @media (min-width: @table-resolution) {
         min-height: 100%;
 
         background-image:none;
@@ -255,7 +255,7 @@ header {
             }
         }
     }
-    // @media (max-width: 768px) {
+    // @media (max-width: @table-resolution) {
     //     //color:red;
     //     header{
     //                 display: block;
@@ -337,7 +337,7 @@ header {
         outline: none;
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: @table-resolution) {
         .portfolio-box-caption {
             .portfolio-box-caption-content {
                 .project-category {
@@ -423,6 +423,7 @@ body {
 
 .show img {
     width: 85%;
+    height: 200px;
     margin: 20px auto;
     box-shadow: 2px 1px 18px 2px;
     &:hover {
@@ -468,3 +469,19 @@ video.bkg {
         justify-content: center;
     }
 }
+
+/////////////////////  mediaqueries
+  @media (max-width: @big-table-resoluton) {
+      .text {
+          width: 209px;
+          font-size: 16px;
+      }
+
+     
+  }
+
+  @media (min-width: @big-table-resoluton) {
+        header{
+                background: #F05F40;
+            }
+  }
