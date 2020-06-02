@@ -117,8 +117,8 @@
     });
     
   }
-  
-  $('#loader').hide();
+
+
   $('#movie').on('loadstart', function () {
      $('#loader').show();
   });
