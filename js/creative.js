@@ -117,11 +117,12 @@
     });
     
   }
-
+  
+  $('#loader').hide();
   $('#movie').on('loadstart', function () {
      $('#loader').show();
   });
   
   $('#movie').on('canplay', function () {
-    $('#loader').hide();
+     $('#loader').hide();
   });
