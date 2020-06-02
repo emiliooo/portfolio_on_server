@@ -117,6 +117,11 @@
     });
     
   }
-                    
 
-
+  $('#movie').on('loadstart', function () {
+     $('#loader').show();
+  });
+  
+  $('#movie').on('canplay', function () {
+    $('#loader').hide();
+  });
