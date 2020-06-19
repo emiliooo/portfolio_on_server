@@ -50,6 +50,9 @@ p {
   background-color: #222222;
   color: white;
 }
+.text-faded {
+  text-align: left;
+}
 section {
   padding: 100px 0;
 }
