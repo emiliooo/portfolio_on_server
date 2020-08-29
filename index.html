@@ -31,6 +31,9 @@
     <!-- Theme CSS -->
     <link href="css/creative.min.css" rel="stylesheet">
 
+    <!-- GalleryThemes -->
+    <link rel="stylesheet" href="css/baguetteBox.css">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -105,11 +108,13 @@
                     <hr class="light">
                     <div class="text-faded">
                         <p>
-                            I’m fascinted and exited about the coding apps. I have over 4 years commercial experience in Front End technologies: HTML,CSS/SASS JAVASCRIPT (ECMA 5/6). Angular 7+ and React.<br><br>
+                            I’m fascinted and exited about the coding apps. I have over 4 years commercial experience in
+                            Front End technologies: HTML,CSS/SASS JAVASCRIPT (ECMA 5/6). Angular 7+ and React.<br><br>
                             I participated and colaboration with IT team in order to developing and provide projects:
                             CRM, CMS, e-commers for management, application lottery, insurance, logistics.<br>
-                            I want to continue in expanding my knowledge and improving my skills with Frontend, Backend side in the future.<br>
-                            I would like to become a Fullstack developer with Java or Python. 
+                            I want to continue in expanding my knowledge and improving my skills with Frontend, Backend
+                            side in the future.<br>
+                            I would like to become a Fullstack developer with Java or Python.
                         </p>
                     </div>
 
@@ -170,7 +175,7 @@
                     <a href="https://stackblitz.com/github/emiliooo/Angular_6_FlyPlanes-web-details" target="_blank">
                         <img src="img/portfolio/img_portfolio/planes.jpg" class="img-responsive " alt="img">
                         <p class="text">
-                           HTML, CSS, ANGULAR 2+
+                            HTML, CSS, ANGULAR 2+
                         </p>
                     </a>
 
@@ -188,7 +193,7 @@
                         <img src="img/portfolio/img_portfolio/pringles.jpg" class="img-responsive " alt="img">
                         <p class="text">
                             HTML, SASS, JQURY, ANGULAR 1.7
-                         </p>
+                        </p>
                     </a>
                 </div>
             </div>
@@ -448,12 +453,12 @@
                     </a>
                 </div>
                 <div class="col-sm-4 col-md-4 col-lg-4 show">
-                        <a href="https://www.recipescard.emildev.pl" target="_blank">
-                            <img src="img/portfolio/img_portfolio/recipes.jpg" class="img-responsive " alt="img">
-                            <p class="text">
-                                HTML, CSS, Javascript, REACT JS
-                            </p>
-                        </a>
+                    <a href="https://www.recipescard.emildev.pl" target="_blank">
+                        <img src="img/portfolio/img_portfolio/recipes.jpg" class="img-responsive " alt="img">
+                        <p class="text">
+                            HTML, CSS, Javascript, REACT JS
+                        </p>
+                    </a>
                 </div>
                 <div class="col-sm-4 col-md-4 col-lg-4 show">
                     <a href="http://www.rockpaptergame.emildev.pl" target="_blank">
@@ -473,6 +478,32 @@
             </div>
         </div>
     </aside>
+
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Certificates & Courses</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="baguetteBoxOne gallery">
+            <a href="/img/portfolio/Certificates/1.jpg" data-caption="Quering Microsoft SQL Server 2012">
+                <img   src="/img/portfolio/Certificates/1.jpg" alt="Quering Microsoft SQL Server 2012">
+            </a>
+            <a href="/img/portfolio/Certificates/2.jpg" data-caption="Administering Microsoft SQL Server 2012 Databases">
+                <img   src="/img/portfolio/Certificates/3.jpg" alt="Administering Microsoft SQL Server 2012 Databases">
+            </a>
+            <a href="/img/portfolio/Certificates/3.jpg" data-caption="Introduction into JAVA">
+                <img   src="/img/portfolio/Certificates/2.jpg" alt="Introduction into JAVA">
+            </a>
+            <a href="/img/portfolio/Certificates/4.jpg" data-caption="Bootcamp Front-End Developer">
+                <img   src="/img/portfolio/Certificates/4.jpg" alt="Bootcamp Front-End Developer">
+            </a>
+        </div>
+    </div>
+
 
     <section id="contact">
         <div class="container">
@@ -511,6 +542,19 @@
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124379861-1"></script>
+
+    <!-- GalleryImages -->
+    <script src="js/baguetteBox.js" async></script>
+    <script src="js/highlight.min.js" async></script>
+    <script>
+        window.onload = function () {
+            baguetteBox.run('.baguetteBoxOne');
+    
+            if (typeof oldIE === 'undefined' && Object.keys) {
+                hljs.initHighlighting();
+            }
+        };
+    </script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
